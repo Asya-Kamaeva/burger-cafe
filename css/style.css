@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section {
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1104px;
+  height: 100%;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input {
+  text-decoration: none;
+  border-width: 0px;
+}
+
+@font-face {
+  font-family: Gagalin;
+  src: url(../fonts/Gagalin-Regular.woff);
+}
+
+@font-face {
+  font-family: Lifehack;
+  src: url(../fonts/Lifehack-Medium.woff);
+}
+
+.general {
+  background: url(../../img/Rectangle.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.general__content {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80vh;
+  width: 100%;
+}
+
+.general__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 97px;
+  padding-right: 76px;
+  width: 94%;
+}
+
+.general__img {
+  padding-right: 11px;
+  position: relative;
+}
+
+.general__drops {
+  position: absolute;
+  top: 17%;
+  left: -5%;
+}
+
+.general__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 213px;
+}
+
+.general__title {
+  color: #f9b43b;
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 85px;
+  padding-bottom: 25px;
+}
+
+.general__description {
+  letter-spacing: -1.63px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: Lifehack;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.general__icon {
+  margin-bottom: 40px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 7%;
+  padding-right: 8%;
+  padding-top: 12px;
+  height: 10vh;
+}
+
+.header__menu {
+  width: 670px;
+}
+
+.header__logo {
+  padding-right: 6%;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #f0f0f0;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.header__item:before {
+  content: "\2022";
+  padding-left: 7px;
+  padding-right: 10px;
+}
+
+.header__item:first-child:before {
+  content: "";
+}
+
+.sidebar {
+  width: 6%;
+}
+
+.sidebar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sidebar__item {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+}
+
+.sidebar__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.sidebar__link {
+  width: 6px;
+  height: 6px;
+  border: 3px solid;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.button__red {
+  width: 97px;
+  height: 35px;
+  background-color: #e45028;
+  border: none;
+  border-radius: 7px;
+  color: #f0f0f0;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.we {
+  background: url(../../img/we-bg.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100% auto;
+}
+
+.we__contant {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.we__title {
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400;
+  color: #2f3234;
+  line-height: 64.05px;
+  padding-top: 134px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.we__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%s;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.we__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31%;
+}
+
+.we__icon {
+  padding-bottom: 34px;
+}
+
+.we__caption {
+  color: #2f3234;
+  font-family: Lifehack;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.14px;
+  letter-spacing: -0.6px;
+  padding-bottom: 20px;
+}
+
+.we__text {
+  opacity: 0.8;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.07px;
+}
+
+.feeds__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+}
+
+.feeds__item {
+  width: 25%;
+  height: 50vh;
+}
+
+.feeds__part {
+  opacity: 0;
+  height: 100%;
+  padding: 50px 33px 50px 20px;
+}
+
+.feeds__item:hover .feeds__part {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.feeds__active .feeds__part {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.feeds__caption {
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.11px;
+}
+
+.feeds__text {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.feeds__input {
+  width: 110px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #2f3234;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feeds__face1 {
+  background: url(../../img/face1.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face2 {
+  background: url(../../img/face2.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face3 {
+  background: url(../../img/face3.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face4 {
+  background: url(../../img/face4.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face5 {
+  background: url(../../img/face5.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face6 {
+  background: url(../../img/face6.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face7 {
+  background: url(../../img/face7.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+
+.feeds__face8 {
+  background: url(../../img/face8.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+}
+/*# sourceMappingURL=style.css.map */

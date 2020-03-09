@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.wrapper {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section{
+  height: 100vh;
+ 
+}
+
+.container {
+  margin: 0 auto;
+  width: 1104px;
+  height: 100%;
+}
+
+ul{
+  padding-inline-start: 0px;
+
+  margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+input{
+  text-decoration: none;
+  border-width: 0px;
+}
+

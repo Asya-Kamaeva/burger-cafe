@@ -1,0 +1,67 @@
+.we {
+  background: url(../../img/we-bg.png);
+ object-fit: cover;
+  background-size: 100% auto;
+
+  &__contant {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+
+  &__title {
+
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    color: #2f3234;
+    line-height: 64.05px;
+    padding-top: 134px;
+    padding-bottom: 55px;
+    text-align: center;
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+   width: 100%s;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+  }
+
+&__icon{
+  padding-bottom: 34px;
+}
+
+&__caption{
+  color: #2f3234;
+  font-family: Lifehack;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.14px;
+   letter-spacing: -0.6px;
+   padding-bottom: 20px;
+}
+
+&__text{
+  opacity: 0.8;
+color: #2f3234;
+font-family: Ubuntu;
+font-size: 14px;
+font-weight: 300;
+line-height: 24.07px;
+}
+
+
+}

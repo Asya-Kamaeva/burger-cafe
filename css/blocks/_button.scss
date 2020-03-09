@@ -1,0 +1,9 @@
+
+.button__red {
+  width: 97px;
+  height: 35px;
+  background-color: #e45028;
+  border: none;
+  border-radius: 7px;
+  @include menu_style;
+}
