@@ -1,0 +1,105 @@
+.team {
+    background-image: url(../../img/team.png);
+    background-size: cover;
+    position: relative;
+
+    &__part {
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        background-color: rgba(47, 50, 52, 0.9);
+        height: 100%;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 17%;
+        width: 70%;
+
+    }
+
+    &__title {
+        @include title;
+        color: #f9b43b;
+        line-height: 64.04px;
+        margin-bottom: 50px;
+
+    }
+
+    &__item{
+        margin-bottom: 35px;
+        
+    }
+
+    &__name {
+
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28.13px;
+        padding-bottom: 17px;
+    
+
+    }
+
+    &__name + &__info_active {
+        color: #f9b43b;
+    }
+
+    &__name:before{
+        // content: url(../../img/down.svg);
+        
+        // color: #f9b43b;
+        // padding-right: 10px;
+content: "";
+width: 9px;
+color: #f9b43b;
+border: 10px solid transparent;
+border-top: 10px solid #f9b43b;
+padding-bottom: 0px;
+margin-right: 10px;
+vertical-align: middle;
+        
+    }
+
+
+    &__info{
+        display: flex;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &__info_active {
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    &__name:before &__info_active {
+        content: url(../../img/up.svg);
+    }
+    
+
+    &__block {
+        color: #ffffff;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 24.01px;
+        padding-left: 21px;
+    }
+
+    &__position {
+        font-weight: 700;
+    }
+
+    &__description{
+        font-weight: 300;
+    }
+
+
+
+}

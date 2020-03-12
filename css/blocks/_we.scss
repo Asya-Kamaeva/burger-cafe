@@ -14,9 +14,7 @@
 
   &__title {
 
-    font-family: Gagalin;
-    font-size: 72px;
-    font-weight: 400;
+    @include title;
     color: #2f3234;
     line-height: 64.05px;
     padding-top: 134px;
