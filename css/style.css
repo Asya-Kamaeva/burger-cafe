@@ -68,9 +68,7 @@ input {
 
 .general {
   background: url(../../img/Rectangle.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .general__content {
@@ -290,9 +288,7 @@ input {
 
 .we {
   background: url(../../img/we-bg.png);
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .we__contant {
@@ -384,6 +380,7 @@ input {
 .feeds__item {
   width: 25%;
   height: 50vh;
+  background-size: cover;
 }
 
 .feeds__part {
@@ -433,61 +430,5 @@ input {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.feeds__face1 {
-  background: url(../../img/face1.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face2 {
-  background: url(../../img/face2.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face3 {
-  background: url(../../img/face3.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face4 {
-  background: url(../../img/face4.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face5 {
-  background: url(../../img/face5.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face6 {
-  background: url(../../img/face6.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face7 {
-  background: url(../../img/face7.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
-}
-
-.feeds__face8 {
-  background: url(../../img/face8.png) no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */

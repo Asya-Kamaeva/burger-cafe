@@ -10,11 +10,11 @@
 
   &__item {
     width: 25%;
-    height: 50vh
-
+    height: 50vh;
+    background-size: cover;
   }
 
-  
+
 
   &__part {
     opacity: 0;
@@ -61,16 +61,8 @@
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase;
+
   }
 
 
-}
-
-@each $face in (face1, face2, face3, face4, face5, face6, face7, face8) {
-  .feeds__#{$face} {
-    background: url(../../img/#{$face}.png) no-repeat;
-    object-fit: cover;
-    background-size: 100%;
-    
-  }
 }
