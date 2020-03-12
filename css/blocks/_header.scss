@@ -16,13 +16,6 @@
   padding-top: 12px;
   height: 10vh;
 
-  &__menu {
-    width: 670px;
-  }
-
-  &__logo {
-    padding-right: 6%;
-  }
 
   &__list {
     display: flex;
@@ -41,5 +34,12 @@
 
   }
 
+}
 
+.logo {
+  padding-right: 6%;
+}
+
+.nav {
+  width: 670px;
 }

@@ -29,9 +29,9 @@
 
     }
 
-    &__item{
+    &__item {
         margin-bottom: 35px;
-        
+
     }
 
     &__name {
@@ -42,49 +42,52 @@
         font-weight: 400;
         line-height: 28.13px;
         padding-bottom: 17px;
-    
+        position: relative;
+        left: 30px;
 
     }
 
-    &__name + &__info_active {
+    &__name:before {
+        content: "";
+        color: #f9b43b;
+        border: 10px solid transparent;
+        border-top: 10px solid #f9b43b;
+        position: absolute;
+        top: 10px;
+        left: -30px;
+
+    }
+
+    &__name_active {
         color: #f9b43b;
     }
 
-    &__name:before{
-        // content: url(../../img/down.svg);
-        
-        // color: #f9b43b;
-        // padding-right: 10px;
-content: "";
-width: 9px;
-color: #f9b43b;
-border: 10px solid transparent;
-border-top: 10px solid #f9b43b;
-padding-bottom: 0px;
-margin-right: 10px;
-vertical-align: middle;
-        
+    &__name_active:before {
+        content: "";
+        color: #f9b43b;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #f9b43b;
+        position: absolute;
+        top: -1px;
+        left: -30px;
+
     }
 
-
-    &__info{
+    &__info {
         display: flex;
         height: 0;
         overflow: hidden;
     }
 
-    &__info_active {
+    &__name_active~&__info {
         height: 100%;
         overflow: hidden;
-        
-    }
 
-    &__name:before &__info_active {
-        content: url(../../img/up.svg);
     }
-    
 
     &__block {
+        display: flex;
+        flex-direction: column;
         color: #ffffff;
         font-family: Ubuntu;
         font-size: 14px;
@@ -94,9 +97,10 @@ vertical-align: middle;
 
     &__position {
         font-weight: 700;
+        padding-bottom: 12px;
     }
 
-    &__description{
+    &__description {
         font-weight: 300;
     }
 

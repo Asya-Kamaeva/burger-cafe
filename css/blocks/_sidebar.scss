@@ -1,5 +1,8 @@
 .sidebar {
   width: 6%;
+  position: fixed;
+  right: 8vh;
+  top: 20vh;
 
   &__list {
     display: flex;
