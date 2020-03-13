@@ -12,7 +12,8 @@
         "blocks/_button.scss",
         "blocks/_we.scss",
         "blocks/_feeds.scss",
-        "blocks/_team.scss"
+        "blocks/_team.scss",
+        "../sprite.svg"
     ],
     "names": [],
     "file": "style.css"
