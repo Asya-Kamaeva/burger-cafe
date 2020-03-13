@@ -1,6 +1,7 @@
 @import "./_base.scss";
 @import "./blocks/_mixins.scss";
 @import "./_fonts.scss";
+@import "./../sprite.svg";
 @import "./blocks/_general.scss";
 @import "./blocks/_header.scss";
 @import "./blocks/_sidebar.scss";
@@ -8,4 +9,5 @@
 @import "./blocks/_we.scss";
 @import "./blocks/_feeds.scss";
 @import "./blocks/_team.scss";
-@import "./../sprite.svg";
+@import "./blocks/_menu.scss";
+@import "./blocks/_map.scss";
