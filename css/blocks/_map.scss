@@ -1,0 +1,52 @@
+.map {
+    background-image: url(../../img/map.png);
+    background-size: cover;
+    position: relative;
+}
+
+.footer {
+    background-color: rgba(00, 00, 00, 0.9);
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &__contant {
+
+        display: flex;
+    }
+
+    &__text {
+        width: 50%;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 24px;
+       
+    }
+
+    &__address {
+        color: #ffffff;
+        font-weight: 300;
+
+    }
+
+    &__number {
+        color: #e45028;
+        font-weight: 700;
+       
+    }
+
+
+
+}
+
+.social {
+    width: 50%;
+
+
+
+
+
+
+
+}
