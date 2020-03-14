@@ -57,14 +57,31 @@ a {
 
 }
 
-p{
+p {
   margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 input {
   text-decoration: none;
   border-width: 0px;
+  width: inherit;
+  outline: 0;
+  outline-offset: 0;
+}
+
+textarea{
+  outline: 0;
+  outline-offset: 0;
+}
+
+button{
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+ 
+
 }
 
 span {
