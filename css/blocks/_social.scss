@@ -5,7 +5,7 @@
     align-items: center;
 
     &__item{
-        margin-left: 20px;
+        margin-left: rem(20px);
         filter: grayscale(.5);
         &:hover{
             filter: grayscale(0)

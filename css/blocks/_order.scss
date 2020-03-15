@@ -5,8 +5,8 @@
     &__title {
         @include title;
         color: #f9b43b;
-        padding-top: 10%;
-        padding-bottom: 5%;
+        padding-top: 17vh;
+        padding-bottom: 5vh;
         text-align: center;
     }
 
@@ -14,16 +14,22 @@
         display: flex;
         width: 100%;
 
-        @include tablets{
+        @include tablets {
             flex-direction: column;
             align-items: center;
             padding: 0 15vw;
+        }
     }
 
     &__left {
         width: 50%;
         display: flex;
         flex-direction: column;
+
+        @include tablets {
+            width: 100%;
+
+        }
     }
 
     &__row {
@@ -31,7 +37,7 @@
         flex: 1;
 
         &_right {
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
 
     }
@@ -41,10 +47,10 @@
         flex-direction: column;
         flex: 1;
         width: 100%;
-        margin-right: 20px;
+        margin-right: rem(20px);
 
         &:last-child {
-            margin-right: 0px;
+            margin-right: rem(0px);
         }
     }
 
@@ -52,19 +58,19 @@
     &__caption {
         color: #ffffff;
         font-family: Ubuntu;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
-        line-height: 24px;
-        margin-bottom: 5px;
+        line-height: rem(24px);
+        margin-bottom: rem(5px);
 
 
     }
 
     &__input {
-        height: 35px;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        padding: 5px 5px;
+        height: rem(35px);
+        border: rem(2px) solid transparent;
+        border-radius: rem(5px);
+        padding: rem(5px) rem(5px);
 
 
         &:focus {
@@ -79,16 +85,21 @@
 
     &__right {
         width: 50%;
-        margin-left: 20px;
+        margin-left: rem(20px);
 
+        @include tablets {
+            width: 100%;
+            margin-left: 0;
+
+        }
     }
 
     &__textarea {
         width: 100%;
-        height: 140px;
+        height: rem(140px);
         resize: none;
-        border: 2px solid transparent;
-        border-radius: 5px;
+        border: rem(2px) solid transparent;
+        border-radius: rem(5px);
 
         &:focus {
             border-color: #f9b43b;
@@ -102,24 +113,24 @@
 
     &__btn {
         display: flex;
-        margin-right: 20px;
-        width: 200px;
+        margin-right: rem(20px);
+        width: rem(200px);
 
         &:hover {
             .order__btn_title:before {
-                border: 1px solid #e45028;
+                border: rem(1px) solid #e45028;
             }
 
 
             .order__btn_title:after {
                 content: "";
-                width: 8px;
-                height: 8px;
+                width: rem(8px);
+                height: rem(8px);
                 background-color: #e45028;
                 border-radius: 50%;
                 position: absolute;
-                left: 5px;
-                bottom: 11px;
+                left: rem(5px);
+                bottom: rem(11px);
 
             }
         }
@@ -127,18 +138,18 @@
 
         &:checked {
             .order__btn_title:before {
-                border: 1px solid #e45028;
+                border: rem(1px) solid #e45028;
             }
 
             .order__btn_title:after {
                 content: "";
-                width: 8px;
-                height: 8px;
+                width: rem(8px);
+                height: rem(8px);
                 background-color: #e45028;
                 border-radius: 50%;
                 position: absolute;
-                left: 5px;
-                bottom: 11px;
+                left: rem(5px);
+                bottom: rem(11px);
 
             }
         }
@@ -146,7 +157,7 @@
     }
 
     &__radio {
-        margin-right: 10px;
+        margin-right: rem(10px);
         display: none;
 
     }
@@ -155,23 +166,23 @@
     &__btn_title {
         color: #ffffff;
         font-family: Ubuntu;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
-        line-height: 24px;
-        margin-bottom: 5px;
-        padding-left: 28px;
+        line-height: rem(24px);
+        margin-bottom: rem(5px);
+        padding-left: rem(28px);
         position: relative;
 
         &:before {
             content: "";
-            width: 16px;
-            height: 16px;
-            border: 1px solid transparent;
+            width: rem(16px);
+            height: rem(16px);
+            border: rem(1px) solid transparent;
             background-color: #fff;
             border-radius: 50%;
             position: absolute;
-            left: 0px;
-            bottom: 6px;
+            left: rem(0px);
+            bottom: rem(6px);
 
 
         }
@@ -185,38 +196,38 @@
 
             .order__check_title:before {
                 content: "";
-                border: 1px solid #fff;
+                border: rem(1px) solid #fff;
             }
 
         }
     }
 
     &__checkbox {
-        margin-right: 10px;
+        margin-right: rem(10px);
         display: none;
     }
 
     &__check_title:before {
         content: "\2713";
-        font-size: 21px;
+        font-size: rem(21px);
         color: #e45028;
         border-radius: 2%;
-        border: 1px solid #e45028;
+        border: rem(1px) solid #e45028;
         text-align: center;
-        line-height: 17px
+        line-height: rem(17px)
     }
 
     &__button {
 
         background-color: #e45028;
         font-family: Ubuntu;
-        font-size: 13px;
+        font-size: rem(13px);
         font-weight: 500;
-        line-height: 30px;
+        line-height: rem(30px);
         text-transform: uppercase;
         color: #ffffff;
-        margin-right: 20px;
-        border-radius: 5px;
+        margin-right: rem(20px);
+        border-radius: rem(5px);
         cursor: pointer;
     }
 
@@ -225,12 +236,10 @@
         cursor: pointer;
         color: #ffffff;
         font-family: Ubuntu;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
-        line-height: 24px;
+        line-height: rem(24px);
         background: none;
     }
 
-
-
-
+}

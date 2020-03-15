@@ -3,6 +3,7 @@
   position: fixed;
   right: 8vh;
   top: 20vh;
+  left: 90vw;
 
   &__list {
     display: flex;
@@ -13,29 +14,29 @@
   }
 
   &__item {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
   }
 
   &__active {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+    border: rem(1px) solid;
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     color: #ffffff;
   }
 
   &__link {
-    width: 6px;
-    height: 6px;
-    border: 3px solid;
+    width: rem(6px);
+    height: rem(6px);
+    border: rem(3px) solid;
     border-radius: 50%;
     color: #ffffff;
   }

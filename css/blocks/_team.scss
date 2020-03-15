@@ -2,6 +2,7 @@
     background-image: url(../../img/team.png);
     background-size: cover;
     position: relative;
+    background-position: center;
 
     &__part {
         position: absolute;
@@ -9,6 +10,12 @@
         left: 50%;
         background-color: rgba(47, 50, 52, 0.9);
         height: 100%;
+
+        @include tablets{
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
 
     }
 
@@ -24,13 +31,19 @@
     &__title {
         @include title;
         color: #f9b43b;
-        line-height: 64.04px;
-        margin-bottom: 50px;
+        line-height: rem(64px);
+        margin-bottom: rem(50px);
 
     }
 
+    &__list{
+        @include tablet{
+            padding: 0 15%;
+        }
+    }
+
     &__item {
-        margin-bottom: 35px;
+        margin-bottom: rem(35px);
 
     }
 
@@ -38,23 +51,24 @@
 
         color: #ffffff;
         font-family: Gagalin;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 400;
-        line-height: 28.13px;
-        padding-bottom: 17px;
+        line-height: rem(28px);
+        padding-bottom: rem(17px);
         position: relative;
-        left: 30px;
+        left: rem(30px);
+        display: inline-flex;
 
     }
 
     &__name:before {
         content: "";
         color: #f9b43b;
-        border: 10px solid transparent;
-        border-top: 10px solid #f9b43b;
+        border: rem(10px) solid transparent;
+        border-top: rem(10px) solid #f9b43b;
         position: absolute;
-        top: 10px;
-        left: -30px;
+        top: rem(10px);
+        left: rem(-30px);
 
     }
 
@@ -65,11 +79,11 @@
     &__name_active:before {
         content: "";
         color: #f9b43b;
-        border: 10px solid transparent;
-        border-bottom: 10px solid #f9b43b;
+        border: rem(10px) solid transparent;
+        border-bottom: rem(10px) solid #f9b43b;
         position: absolute;
-        top: -1px;
-        left: -30px;
+        top: rem(-1px);
+        left: rem(-30px);
 
     }
 
@@ -77,6 +91,11 @@
         display: flex;
         height: 0;
         overflow: hidden;
+
+        @include tablets{
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__name_active~&__info {
@@ -85,19 +104,28 @@
 
     }
 
+    &__img{
+        object-fit: contain;
+    }
+
     &__block {
         display: flex;
         flex-direction: column;
         color: #ffffff;
         font-family: Ubuntu;
-        font-size: 14px;
-        line-height: 24.01px;
-        padding-left: 21px;
+        font-size: rem(14px);
+        line-height: rem(24px);
+        padding-left: rem(21px);
+
+        @include tablets{
+            padding-left: 0;
+            padding-top: rem(12px);
+        }
     }
 
     &__position {
         font-weight: 700;
-        padding-bottom: 12px;
+        padding-bottom: rem(12px);
     }
 
     &__description {

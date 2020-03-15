@@ -2,6 +2,7 @@
     background-image: url(../../img/map.png);
     background-size: cover;
     position: relative;
+    background-position: center;
 }
 
 .footer {
@@ -19,8 +20,8 @@
     &__text {
         width: 50%;
         font-family: Ubuntu;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14px);
+        line-height: rem(24px);
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -37,7 +38,7 @@
     &__number {
         color: #e45028;
         font-weight: 700;
-        padding-left: 5px;
+        padding-left: rem(5px);
 
     }
 

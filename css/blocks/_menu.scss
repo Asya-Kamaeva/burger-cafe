@@ -2,20 +2,25 @@
     background-image: url(../../img/menu.png);
     background-size: cover;
     display: flex;
+ 
     height: 100vh;
+    background-position: center;
 
 
     &__label {
         @include title;
         color: #ffffff;
         padding-top: 10%;
-        padding-left: 10%;
+        padding-left: 8%;
+        padding-right: 3%;
+       
+
     }
 
     &__list {
         display: flex;
         height: 100%;
-        margin-left: auto;
+      margin-left: auto;
     }
 
     &__item {
@@ -25,8 +30,12 @@
         &_active {
 
             .menu__block {
-                width: 500px;
+                width: rem(500px);
+                max-width: 35vw;
 
+                @include tablets{
+                    max-width: 100vh;
+                }
             }
 
             .menu__title {
@@ -40,12 +49,12 @@
         display: block;
         height: 100%;
         background-size: cover;
-        width: 80px;
+        width: rem(80px);
         color: #ffffff;
         font-family: Gagalin;
-        font-size: 40px;
+        font-size: rem(40px);
         font-weight: 400;
-        line-height: 63.75px;
+        line-height: rem(64px);
 
     }
 
@@ -54,18 +63,18 @@
         position: absolute;
         transform: rotate(-90deg);
         white-space: nowrap;
-        bottom: 60px;
+        bottom: rem(60px);
 
     }
 
     &__block {
-        width: 0px;
+        width: rem(0px);
         overflow: hidden;
         height: 100%;
         color: #ffffff;
         font-family: Ubuntu;
-        font-size: 14px;
-        line-height: 24.01px;
+        font-size: rem(14px);
+        line-height: rem(24px);
         background-color: rgba(12, 12, 12, 0.7);
     }
 

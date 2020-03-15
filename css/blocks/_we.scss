@@ -16,18 +16,17 @@
 
     @include title;
     color: #2f3234;
-    line-height: 64.05px;
-    padding-top: 134px;
-    padding-bottom: 55px;
+    line-height: rem(64px);
+    padding-top: rem(134px);
+    padding-bottom: rem(55px);
     text-align: center;
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
-    width: 100%s;
-    padding-left: 7%;
-    padding-right: 7%;
+    width: 100%;
+    
   }
 
   &__item {
@@ -38,27 +37,27 @@
   }
 
   &__icon {
-    padding-bottom: 34px;
+    padding-bottom: rem(34px);
     
   }
 
   &__caption {
     color: #2f3234;
     font-family: Lifehack;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
-    line-height: 28.14px;
-    letter-spacing: -0.6px;
-    padding-bottom: 20px;
+    line-height: rem(28px);
+   
+    padding-bottom: rem(20px);
   }
 
   &__text {
     opacity: 0.8;
     color: #2f3234;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24.07px;
+    line-height: rem(24px);
   }
 
 

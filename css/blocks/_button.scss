@@ -1,9 +1,24 @@
+.button {
+  
+ 
+  &__red {
+    width: rem(97px);
+    height: rem(35px);
+    background-color: #e45028;
+    border: none;
+    border-radius: rem(7px);
+    @include menu_style;
+    margin-left: 2vw;
+    max-width: 9vh;
 
-.button__red {
-  width: 97px;
-  height: 35px;
-  background-color: #e45028;
-  border: none;
-  border-radius: 7px;
-  @include menu_style;
+    @include tablets{
+      max-width: 10vh;
+    }
+    
+  }
+  @include tablets{
+    margin-left: auto;
+  }
+
+
 }
