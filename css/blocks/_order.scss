@@ -5,9 +5,13 @@
     &__title {
         @include title;
         color: #f9b43b;
-        padding-top: 17vh;
-        padding-bottom: 5vh;
+        padding-top: 17vw;
+        padding-bottom: 7vw;
         text-align: center;
+
+        @include phones{
+            font-size: rem(50px);
+        }
     }
 
     &__content {
@@ -18,6 +22,11 @@
             flex-direction: column;
             align-items: center;
             padding: 0 15vw;
+        }
+
+        @include phones{
+            padding: 0;
+            
         }
     }
 
@@ -35,6 +44,10 @@
     &__row {
         display: flex;
         flex: 1;
+
+        @include tablets {
+            margin-bottom: 2vw;
+        }
 
         &_right {
             margin-bottom: rem(20px);
@@ -113,7 +126,7 @@
 
     &__btn {
         display: flex;
-        margin-right: rem(20px);
+        margin-right: 1vw;
         width: rem(200px);
 
         &:hover {
@@ -218,7 +231,8 @@
     }
 
     &__button {
-
+        display: inline-block;
+        width: rem(97px);
         background-color: #e45028;
         font-family: Ubuntu;
         font-size: rem(13px);
@@ -240,6 +254,7 @@
         font-weight: 300;
         line-height: rem(24px);
         background: none;
+        width: rem(97px);
     }
 
 }

@@ -28,6 +28,18 @@
     opacity: 0;
     height: 100%;
     padding: rem(50px) rem(33px) rem(50px) rem(20px);
+   
+    @include tablets{
+  padding-top: 3%;
+  text-align: center;
+    }
+
+    @include phones{
+      text-align: center;
+     padding: 0;
+     padding: 30% 3%;
+    }
+  
   }
 
   &__item:hover &__part {
@@ -48,6 +60,13 @@
     font-size: rem(14px);
     font-weight: 400;
     line-height: rem(28px);
+
+    @include phones{
+      font-size: rem(24px);
+      padding-bottom: 2%;
+
+
+    }
   }
 
   &__text {
@@ -56,9 +75,13 @@
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
+
+    @include phones{
+      display: none;
+    }
   }
 
-  &__link {
+  &__link, &__link_none {
     color: #ffffff;
     font-family: Ubuntu;
     font-size: rem(13px);
@@ -69,9 +92,28 @@
     width: rem(110px);
     height: rem(35px);
     border-radius: rem(5px);
-    padding-left: rem(14px);
-    padding-top: rem(2px);
+    display: inline-block;
+    padding: rem(2px) rem(14px);
+    margin-top: 3%;
+
   }
+
+  &__link{
+    @include phones{
+      display: none;
+    }
+  }
+
+  &__link_none{
+    display: none;
+    @include phones{
+      display: inline-block;
+      white-space: nowrap;
+      width: 80%;
+
+    }
+  }
+
 
 
 }

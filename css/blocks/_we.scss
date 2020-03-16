@@ -17,15 +17,23 @@
     @include title;
     color: #2f3234;
     line-height: rem(64px);
-    padding-top: rem(134px);
+    
     padding-bottom: rem(55px);
     text-align: center;
+
+    @include phones{
+      padding-top: 5vw;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include phones{
+    flex-direction: column;
+  }
     
   }
 
@@ -34,10 +42,26 @@
     flex-direction: column;
     align-items: center;
     width: 31%;
+
+    @include phones{
+      flex-direction: initial;
+      width: 100%;
+      margin-bottom: 4vw;
+    }
+  }
+
+  &__block{
+    @include phones{
+      margin-left: 2vw;
+    }
   }
 
   &__icon {
     padding-bottom: rem(34px);
+    @include phones{
+      width: 42%;
+      text-align: center;
+    }
     
   }
 
@@ -47,8 +71,13 @@
     font-size: rem(24px);
     font-weight: 500;
     line-height: rem(28px);
-   
+   text-align: center;
     padding-bottom: rem(20px);
+
+    @include phones{
+      padding-bottom: 2vw;
+    }
+
   }
 
   &__text {

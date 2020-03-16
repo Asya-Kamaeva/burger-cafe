@@ -34,10 +34,15 @@
         line-height: rem(64px);
         margin-bottom: rem(50px);
 
+        @include phones{
+            font-size: rem(50px);
+        }
     }
 
+    
+
     &__list{
-        @include tablet{
+        @include tablets{
             padding: 0 15%;
         }
     }
@@ -58,6 +63,10 @@
         position: relative;
         left: rem(30px);
         display: inline-flex;
+
+        @include phones{
+            font-size: rem(25px);
+        }
 
     }
 
