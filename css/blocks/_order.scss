@@ -11,6 +11,8 @@
 
         @include phones{
             font-size: rem(50px);
+            padding-top: 10%;
+            padding-bottom: 3%;
         }
     }
 
@@ -47,6 +49,10 @@
 
         @include tablets {
             margin-bottom: 2vw;
+        }
+
+        @include phones {
+            margin-bottom: 1vw;
         }
 
         &_right {

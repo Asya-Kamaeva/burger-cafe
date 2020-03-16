@@ -201,6 +201,12 @@ span {
   padding-bottom: 1vw;
 }
 
+@media screen and (max-width: 768px) {
+  .general__title {
+    font-size: 3.9375rem;
+  }
+}
+
 .general__description {
   letter-spacing: -0.125rem;
   line-height: 3.75rem;
@@ -208,6 +214,13 @@ span {
   font-family: Lifehack;
   font-size: 4.0625rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .general__description {
+    font-size: 3.375rem;
+    text-align: center;
+  }
 }
 
 .general__icon {
@@ -950,7 +963,7 @@ span {
 
 @media screen and (max-width: 480px) {
   .footer {
-    height: 10%;
+    height: 12%;
   }
 }
 
@@ -1043,6 +1056,8 @@ span {
 @media screen and (max-width: 480px) {
   .order__title {
     font-size: 3.125rem;
+    padding-top: 10%;
+    padding-bottom: 3%;
   }
 }
 
@@ -1101,6 +1116,12 @@ span {
 @media screen and (max-width: 768px) {
   .order__row {
     margin-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__row {
+    margin-bottom: 1vw;
   }
 }
 

@@ -57,6 +57,10 @@
     color: #f9b43b;
     @include title;
     padding-bottom: 1vw;
+
+    @include tablets{
+      font-size: rem(63px);
+    }
   }
 
   &__description {
@@ -67,6 +71,11 @@
     font-family: Lifehack;
     font-size: rem(65px);
     font-weight: 500;
+
+    @include tablets{
+      font-size: rem(54px);
+      text-align: center;
+    }
   }
 
   &__icon {
