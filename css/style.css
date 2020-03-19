@@ -421,8 +421,6 @@ span {
 }
 
 .button__red {
-  width: 6.0625rem;
-  height: 2.1875rem;
   background-color: #e45028;
   border: none;
   border-radius: 0.4375rem;
@@ -434,12 +432,14 @@ span {
   margin-left: 2vw;
   max-width: 9vh;
   text-align: center;
+  padding: 11%;
 }
 
 @media screen and (max-width: 768px) {
   .button__red {
     max-width: 10vh;
     margin-left: 0;
+    padding: 13%;
   }
 }
 
@@ -447,6 +447,7 @@ span {
   .button__red {
     margin-left: 0;
     max-width: 13vh;
+    margin-right: 3vw;
   }
 }
 

@@ -3,8 +3,7 @@
   
  
   &__red {
-    width: rem(97px);
-    height: rem(35px);
+  
     background-color: #e45028;
     border: none;
     border-radius: rem(7px);
@@ -12,10 +11,14 @@
     margin-left: 2vw;
     max-width: 9vh;
     text-align: center;
+    padding: 11%;
+
+  
 
     @include tablets{
       max-width: 10vh;
       margin-left: 0;
+      padding: 13%;
      
 
     }
@@ -23,6 +26,7 @@
     @include phones{
       margin-left: 0;
       max-width: 13vh;
+      margin-right: 3vw;
     }
     
   }
