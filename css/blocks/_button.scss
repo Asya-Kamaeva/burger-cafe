@@ -1,5 +1,6 @@
 .button {
   
+  
  
   &__red {
     width: rem(97px);
@@ -10,9 +11,18 @@
     @include menu_style;
     margin-left: 2vw;
     max-width: 9vh;
+    text-align: center;
 
     @include tablets{
       max-width: 10vh;
+      margin-left: 0;
+     
+
+    }
+
+    @include phones{
+      margin-left: 0;
+      max-width: 13vh;
     }
     
   }

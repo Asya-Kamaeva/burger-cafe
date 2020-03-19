@@ -25,6 +25,13 @@
         margin: auto;
         margin-top: 17%;
         width: 70%;
+        height: 100%;
+        
+
+        @include phones{
+            margin-top: 0;
+            justify-content: space-evenly;
+        }
 
     }
 
@@ -36,6 +43,7 @@
 
         @include phones{
             font-size: rem(50px);
+            margin-bottom: 3vh;
         }
     }
 
@@ -45,10 +53,19 @@
         @include tablets{
             padding: 0 15%;
         }
+
+        @include phones{
+            padding: 0 0;
+        }
     }
 
     &__item {
         margin-bottom: rem(35px);
+
+        @include phones{
+            margin-bottom: 3vh;
+            text-align: center;
+        }
 
     }
 

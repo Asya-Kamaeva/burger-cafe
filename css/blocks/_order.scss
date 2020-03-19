@@ -10,9 +10,9 @@
         text-align: center;
 
         @include phones{
-            font-size: rem(50px);
-            padding-top: 10%;
-            padding-bottom: 3%;
+            font-size: 11vw;
+            padding-top: 4vh;
+            padding-bottom: 1vh;
         }
     }
 
@@ -53,10 +53,17 @@
 
         @include phones {
             margin-bottom: 1vw;
+            justify-content: space-around;
         }
 
         &_right {
             margin-bottom: rem(20px);
+
+            @include phones{
+                margin-bottom: 1.4vh;
+            }
+
+           
         }
 
     }
@@ -82,6 +89,10 @@
         line-height: rem(24px);
         margin-bottom: rem(5px);
 
+        @include phones{
+            margin-bottom: 0.5vh;
+        }
+
 
     }
 
@@ -90,6 +101,10 @@
         border: rem(2px) solid transparent;
         border-radius: rem(5px);
         padding: rem(5px) rem(5px);
+
+        @include phones{
+            height: 5vh;
+        }
 
 
         &:focus {
@@ -120,6 +135,10 @@
         border: rem(2px) solid transparent;
         border-radius: rem(5px);
 
+        @include phones{
+            height: 17vh;
+        }
+
         &:focus {
             border-color: #f9b43b;
         }
@@ -134,6 +153,10 @@
         display: flex;
         margin-right: 1vw;
         width: rem(200px);
+
+        @include phones{
+            width: auto;
+        }
 
         &:hover {
             .order__btn_title:before {
@@ -249,6 +272,10 @@
         margin-right: rem(20px);
         border-radius: rem(5px);
         cursor: pointer;
+
+        @include phones{
+            margin-right: 0;
+        }
     }
 
 

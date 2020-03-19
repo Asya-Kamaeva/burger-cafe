@@ -22,7 +22,9 @@
     text-align: center;
 
     @include phones{
-      padding-top: 5vw;
+      
+      padding-bottom: 3vh;
+      font-size: rem(55px);
     }
   }
 
@@ -51,16 +53,25 @@
   }
 
   &__block{
+    width: 100%;
+    
     @include phones{
       margin-left: 2vw;
+      
     }
   }
 
   &__icon {
     padding-bottom: rem(34px);
     @include phones{
-      width: 42%;
       text-align: center;
+      padding-bottom: 0;
+
+      &_svg{
+        max-width: 25vw;
+        width: rem(88px);
+        height: rem(85px);
+      }
     }
     
   }
@@ -76,6 +87,7 @@
 
     @include phones{
       padding-bottom: 2vw;
+      font-size: 6vw;
     }
 
   }

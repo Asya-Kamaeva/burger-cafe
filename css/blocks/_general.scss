@@ -27,13 +27,18 @@
     @include tablets{
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
     }
   }
 
   &__img {
     padding-right: rem(11px);
     position: relative;
+
+    @include phones{
+      max-width: 80%;
+      text-align: center;
+    }
     
   }
 
@@ -59,7 +64,10 @@
     padding-bottom: 1vw;
 
     @include tablets{
-      font-size: rem(63px);
+      font-size: 10vw;
+    }
+    @include phones{
+      font-size: 17vw;
     }
   }
 
@@ -73,8 +81,12 @@
     font-weight: 500;
 
     @include tablets{
-      font-size: rem(54px);
+      font-size: 9vw;
       text-align: center;
+    }
+
+    @include phones{
+      font-size: 14vw;
     }
   }
 

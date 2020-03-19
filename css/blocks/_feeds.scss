@@ -37,7 +37,7 @@
     @include phones{
       text-align: center;
      padding: 0;
-     padding: 30% 3%;
+     padding: 6vh 3vh;
     }
   
   }
@@ -110,6 +110,10 @@
       display: inline-block;
       white-space: nowrap;
       width: 80%;
+      font-size: 3.4vw;
+      padding-top: 1vw;
+      padding-left: 3vw;
+      
 
     }
   }

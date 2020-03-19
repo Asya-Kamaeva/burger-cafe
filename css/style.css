@@ -158,15 +158,22 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
 .general__img {
   padding-right: 0.6875rem;
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .general__img {
+    max-width: 80%;
+    text-align: center;
+  }
 }
 
 .general__drops {
@@ -203,7 +210,13 @@ span {
 
 @media screen and (max-width: 768px) {
   .general__title {
-    font-size: 3.9375rem;
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .general__title {
+    font-size: 17vw;
   }
 }
 
@@ -218,8 +231,14 @@ span {
 
 @media screen and (max-width: 768px) {
   .general__description {
-    font-size: 3.375rem;
+    font-size: 9vw;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .general__description {
+    font-size: 14vw;
   }
 }
 
@@ -414,11 +433,20 @@ span {
   text-transform: uppercase;
   margin-left: 2vw;
   max-width: 9vh;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .button__red {
     max-width: 10vh;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button__red {
+    margin-left: 0;
+    max-width: 13vh;
   }
 }
 
@@ -462,7 +490,8 @@ span {
 
 @media screen and (max-width: 480px) {
   .we__title {
-    padding-top: 5vw;
+    padding-bottom: 3vh;
+    font-size: 3.4375rem;
   }
 }
 
@@ -510,6 +539,10 @@ span {
   }
 }
 
+.we__block {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   .we__block {
     margin-left: 2vw;
@@ -522,8 +555,13 @@ span {
 
 @media screen and (max-width: 480px) {
   .we__icon {
-    width: 42%;
     text-align: center;
+    padding-bottom: 0;
+  }
+  .we__icon_svg {
+    max-width: 25vw;
+    width: 5.5rem;
+    height: 5.3125rem;
   }
 }
 
@@ -540,6 +578,7 @@ span {
 @media screen and (max-width: 480px) {
   .we__caption {
     padding-bottom: 2vw;
+    font-size: 6vw;
   }
 }
 
@@ -593,7 +632,7 @@ span {
   .feeds__part {
     text-align: center;
     padding: 0;
-    padding: 30% 3%;
+    padding: 6vh 3vh;
   }
 }
 
@@ -671,6 +710,9 @@ span {
     display: inline-block;
     white-space: nowrap;
     width: 80%;
+    font-size: 3.4vw;
+    padding-top: 1vw;
+    padding-left: 3vw;
   }
 }
 
@@ -708,6 +750,16 @@ span {
   margin: auto;
   margin-top: 17%;
   width: 70%;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .team__content {
+    margin-top: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .team__title {
@@ -722,6 +774,7 @@ span {
 @media screen and (max-width: 480px) {
   .team__title {
     font-size: 3.125rem;
+    margin-bottom: 3vh;
   }
 }
 
@@ -731,8 +784,21 @@ span {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .team__list {
+    padding: 0 0;
+  }
+}
+
 .team__item {
   margin-bottom: 2.1875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .team__item {
+    margin-bottom: 3vh;
+    text-align: center;
+  }
 }
 
 .team__name {
@@ -963,7 +1029,7 @@ span {
 
 @media screen and (max-width: 480px) {
   .footer {
-    height: 12%;
+    height: 28vw;
   }
 }
 
@@ -1055,9 +1121,9 @@ span {
 
 @media screen and (max-width: 480px) {
   .order__title {
-    font-size: 3.125rem;
-    padding-top: 10%;
-    padding-bottom: 3%;
+    font-size: 11vw;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
   }
 }
 
@@ -1122,11 +1188,19 @@ span {
 @media screen and (max-width: 480px) {
   .order__row {
     margin-bottom: 1vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 .order__row_right {
   margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 480px) {
+  .order__row_right {
+    margin-bottom: 1.4vh;
+  }
 }
 
 .order__block {
@@ -1157,11 +1231,23 @@ span {
   margin-bottom: 0.3125rem;
 }
 
+@media screen and (max-width: 480px) {
+  .order__caption {
+    margin-bottom: 0.5vh;
+  }
+}
+
 .order__input {
   height: 2.1875rem;
   border: 0.125rem solid transparent;
   border-radius: 0.3125rem;
   padding: 0.3125rem 0.3125rem;
+}
+
+@media screen and (max-width: 480px) {
+  .order__input {
+    height: 5vh;
+  }
 }
 
 .order__input:focus {
@@ -1192,6 +1278,12 @@ span {
   border-radius: 0.3125rem;
 }
 
+@media screen and (max-width: 480px) {
+  .order__textarea {
+    height: 17vh;
+  }
+}
+
 .order__textarea:focus {
   border-color: #f9b43b;
 }
@@ -1206,6 +1298,12 @@ span {
   display: flex;
   margin-right: 1vw;
   width: 12.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .order__btn {
+    width: auto;
+  }
 }
 
 .order__btn:hover .order__btn_title:before {
@@ -1305,6 +1403,12 @@ span {
   margin-right: 1.25rem;
   border-radius: 0.3125rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .order__button {
+    margin-right: 0;
+  }
 }
 
 .order__button_none {
