@@ -93,7 +93,7 @@
 
         @include phones {
             top: 3vh;
-            left: 3vw;
+            left: 1vw;
             width: rem(80px);
             height: rem(80px);
 
@@ -274,7 +274,7 @@
 
         @include phones{
             top: 3vh;
-            left: calc(3vw + 80px);
+            left: calc(1vw + 80px);
             padding: rem(10px);
            
         }
