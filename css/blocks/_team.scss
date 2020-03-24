@@ -80,6 +80,7 @@
         position: relative;
         left: rem(30px);
         display: inline-flex;
+        cursor: pointer;
 
         @include phones{
             font-size: rem(25px);
@@ -100,6 +101,7 @@
 
     &__name_active {
         color: #f9b43b;
+        
     }
 
     &__name_active:before {
@@ -117,6 +119,8 @@
         display: flex;
         height: 0;
         overflow: hidden;
+        transition: 0.3s;
+       
 
         @include tablets{
             flex-direction: column;
@@ -127,7 +131,7 @@
     &__name_active~&__info {
         height: 100%;
         overflow: hidden;
-
+        
     }
 
     &__img{
