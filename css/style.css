@@ -1682,7 +1682,7 @@ span {
   top: 20%;
 }
 
-.slider__composition:hover ~ .slider__table {
+.slider__composition:hover .slider__table {
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1899,22 +1899,22 @@ span {
   border-radius: 0.625rem;
   position: absolute;
   z-index: 3;
-  left: 5.625rem;
-  top: 20%;
+  left: 5.5rem;
+  top: 0%;
   color: #000000;
 }
 
 @media screen and (max-width: 768px) {
   .slider__table {
-    top: 4vh;
-    left: calc(20vw + 90px);
+    top: 0;
+    left: 90px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .slider__table {
-    top: 3vh;
-    left: calc(1vw + 80px);
+    top: 0;
+    left: 80px;
     padding: 0.625rem;
   }
 }

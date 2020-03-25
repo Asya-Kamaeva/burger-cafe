@@ -81,7 +81,9 @@
         background-color: rgba(227, 80, 40, 0.4);
         top: 20%;
 
-        &:hover ~ .slider__table{
+       
+
+        &:hover .slider__table{
             opacity: 1;
             transition: 0.5s;
         }
@@ -263,18 +265,18 @@
         border-radius: rem(10px);
         position: absolute;
         z-index: 3;
-        left: rem(90px);
-        top: 20%;
+        left: rem(88px);
+        top: 0%;
         color: #000000;
 
         @include tablets{
-            top: 4vh;
-            left: calc(20vw + 90px);
+            top: 0;
+            left: 90px;
         }
 
         @include phones{
-            top: 3vh;
-            left: calc(1vw + 80px);
+            top: 0;
+            left: 80px;
             padding: rem(10px);
            
         }
