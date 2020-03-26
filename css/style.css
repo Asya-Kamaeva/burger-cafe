@@ -973,8 +973,6 @@ span {
   display: flex;
   height: 0;
   overflow: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -1607,6 +1605,12 @@ span {
   border-bottom-width: 0;
   border-left-width: 0;
   right: 0vw;
+}
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider__item {

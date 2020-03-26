@@ -35,10 +35,15 @@
 
     }
 
+    &__list{
+        display: flex;
+    }
+
 
 
     &__item {
         display: flex;
+       
 
         @include tablets {
             flex-direction: column;
