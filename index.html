@@ -185,7 +185,7 @@
     <section class="section slider">
       <div class="container">
         <div class="slider__content">
-          
+
           <a href="#" class="slider__control_prev">
           </a>
 
@@ -375,7 +375,7 @@
                 </a>
 
                 
-                <img src="./img/slider-burger.png" alt="" class="slider__img">
+                <img src="./img/slider-2.png" alt="" class="slider__img">
                 <div class="slider__kkal">
                   <img src="./img/kkal.png" alt="" class="slider__kkal_img">
                   <span class="slider__kkal_mass">1200</span>
@@ -479,7 +479,7 @@
 
                 </a>
 
-                <img src="./img/slider-burger.png" alt="" class="slider__img">
+                <img src="./img/slider-3.png" alt="" class="slider__img">
                 <div class="slider__kkal">
                   <img src="./img/kkal.png" alt="" class="slider__kkal_img">
                   <span class="slider__kkal_mass">1200</span>
@@ -583,7 +583,7 @@
 
                 </a>
     
-                <img src="./img/slider-burger.png" alt="" class="slider__img">
+                <img src="./img/slider-4.png" alt="" class="slider__img">
                 <div class="slider__kkal">
                   <img src="./img/kkal.png" alt="" class="slider__kkal_img">
                   <span class="slider__kkal_mass">1200</span>
@@ -839,40 +839,45 @@
     <section class="section order">
       <div class="container">
         <h2 class="order__title">Закажите доставку</h2>
-        <form class="order__content">
+        <form class="order__content" id="myForm">
           <div class="order__left">
             <div class="order__row">
               <label class="order__block">
                 <span class="order__caption">Имя</span>
-                <input type="text" class="order__input">
+                <input type="text" class="order__input" name="name" required>
+                <div class="order__error"></div>
               </label>
               <label class="order__block">
                 <span class="order__caption">Телефон</span>
-                <input type="text" class="order__input">
+                <input type="tel" class="order__input" name="phone" required>
+                <div class="order__error"></div>
               </label>
             </div>
             <div class="order__row">
               <label class="order__block">
                 <span class="order__caption">Улица</span>
-                <input type="text" class="order__input">
+                <input type="text" class="order__input" name="street" required>
+                <div class="order__error"></div>
               </label>
             </div>
             <div class="order__row">
               <label class="order__block">
                 <span class="order__caption">Дом</span>
-                <input type="text" class="order__input">
+                <input type="number" class="order__input" name="house" required>
+                <div class="order__error"></div>
               </label>
               <label class="order__block">
                 <span class="order__caption">Корпус</span>
-                <input type="text" class="order__input">
+                <input type="number" class="order__input" name="block">
               </label>
               <label class="order__block">
                 <span class="order__caption">Квартира</span>
-                <input type="text" class="order__input">
+                <input type="number" class="order__input" name="apartment" required>
+                <div class="order__error"></div>
               </label>
               <label class="order__block">
                 <span class="order__caption">Этаж</span>
-                <input type="text" class="order__input">
+                <input type="number" class="order__input" name="floor">
               </label>
             </div>
           </div>
@@ -880,35 +885,42 @@
             <div class="order__row order__row_right">
               <label class="order__block">
                 <span class="order__caption">Комментарий</span>
-                <textarea class="order__textarea" cols="30" rows="4"></textarea>
+                <textarea class="order__textarea" cols="30" rows="4" name="comment"></textarea>
               </label>
             </div>
 
             <div class="order__row order__row_right">
               <label class="order__btn">
-                <input type="radio" class="order__radio">
+                <input type="radio" class="order__radio" name="change">
                 <span class="order__btn_title">Потребуется сдача</span>
               </label>
               <label class="order__btn">
-                <input type="radio" class="order__radio">
+                <input type="radio" class="order__radio" name="card">
                 <span class="order__btn_title">Оплата по карте</span>
               </label>
             </div>
 
             <div class="order__row order__row_right">
               <label class="order__check">
-                <input class="order__checkbox" type="checkbox" checked="checked">
+                <input class="order__checkbox" type="checkbox" checked="checked" name="call">
                 <span class="order__btn_title order__check_title">Не перезванивать</span>
               </label>
             </div>
 
             <div class="order__row">
 
-              <input type="submit" value="Заказать" class="order__button">
+              <input type="submit" value="Заказать" class="order__button" id="sendButton">
 
-              <input type="submit" value="Очистить" class="order__button_none">
+              <input type="reset" value="Очистить" class="order__button_none">
 
             </div>
+
+            <script type="template" id="overlayTemplate">
+              <div class="order__overlay_container">
+                <a href="#" class="order__overlay_close">х</a>
+                <div class="order__overlay_content"></div>
+              </div>
+            </script>
 
           </div>
         </form>

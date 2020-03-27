@@ -2,6 +2,12 @@
     background-image: url(../../img/bg_order.png);
     background-size: cover;
 
+    &__error {
+        color: #f9b43b;
+        font-size: rem(12px);
+        padding-top: rem(3px);
+    }
+
     &__title {
         @include title;
         color: #f9b43b;
@@ -9,7 +15,7 @@
         padding-bottom: 7%;
         text-align: center;
 
-        @include phones{
+        @include phones {
             font-size: 11vw;
             padding-top: 4vh;
             padding-bottom: 1vh;
@@ -26,9 +32,9 @@
             padding: 0 15vw;
         }
 
-        @include phones{
+        @include phones {
             padding: 0;
-            
+
         }
     }
 
@@ -59,11 +65,11 @@
         &_right {
             margin-bottom: rem(20px);
 
-            @include phones{
+            @include phones {
                 margin-bottom: 1.4vh;
             }
 
-           
+
         }
 
     }
@@ -89,7 +95,7 @@
         line-height: rem(24px);
         margin-bottom: rem(5px);
 
-        @include phones{
+        @include phones {
             margin-bottom: 0.5vh;
         }
 
@@ -102,7 +108,7 @@
         border-radius: rem(5px);
         padding: rem(5px) rem(5px);
 
-        @include phones{
+        @include phones {
             height: 5vh;
         }
 
@@ -135,7 +141,7 @@
         border: rem(2px) solid transparent;
         border-radius: rem(5px);
 
-        @include phones{
+        @include phones {
             height: 17vh;
         }
 
@@ -154,46 +160,8 @@
         margin-right: 1vw;
         width: rem(200px);
 
-        @include phones{
+        @include phones {
             width: auto;
-        }
-
-        &:hover {
-            .order__btn_title:before {
-                border: rem(1px) solid #e45028;
-            }
-
-
-            .order__btn_title:after {
-                content: "";
-                width: rem(8px);
-                height: rem(8px);
-                background-color: #e45028;
-                border-radius: 50%;
-                position: absolute;
-                left: rem(5px);
-                bottom: rem(11px);
-
-            }
-        }
-
-
-        &:checked {
-            .order__btn_title:before {
-                border: rem(1px) solid #e45028;
-            }
-
-            .order__btn_title:after {
-                content: "";
-                width: rem(8px);
-                height: rem(8px);
-                background-color: #e45028;
-                border-radius: 50%;
-                position: absolute;
-                left: rem(5px);
-                bottom: rem(11px);
-
-            }
         }
 
     }
@@ -201,6 +169,23 @@
     &__radio {
         margin-right: rem(10px);
         display: none;
+
+        &:checked~.order__btn_title:before {
+            border: rem(1px) solid #e45028;
+        }
+
+        &:checked~.order__btn_title:after {
+            content: "";
+            width: rem(8px);
+            height: rem(8px);
+            background-color: #e45028;
+            border-radius: 50%;
+            position: absolute;
+            left: rem(5px);
+            bottom: rem(11px);
+
+        }
+
 
     }
 
@@ -234,29 +219,30 @@
     &__check {
         display: flex;
 
-        &:checked {
 
-            .order__check_title:before {
-                content: "";
-                border: rem(1px) solid #fff;
-            }
 
+        &_title:before {
+            content: "";
+            border: rem(1px) solid #fff;
+            border-radius: 2%;
         }
+
+
     }
 
     &__checkbox {
         margin-right: rem(10px);
         display: none;
-    }
 
-    &__check_title:before {
-        content: "\2713";
-        font-size: rem(21px);
-        color: #e45028;
-        border-radius: 2%;
-        border: rem(1px) solid #e45028;
-        text-align: center;
-        line-height: rem(17px)
+        &:checked~.order__check_title:before {
+            content: "\2713";
+            font-size: rem(21px);
+            color: #e45028;
+            border-radius: 2%;
+            border: rem(1px) solid #e45028;
+            text-align: center;
+            line-height: rem(17px)
+        }
     }
 
     &__button {
@@ -273,7 +259,7 @@
         border-radius: rem(5px);
         cursor: pointer;
 
-        @include phones{
+        @include phones {
             margin-right: 0;
         }
     }
@@ -290,4 +276,50 @@
         width: rem(97px);
     }
 
+    &__overlay {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(12, 12, 12, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_container {
+            width: 50%;
+            height: 10%;
+            font-family: Ubuntu;
+            font-size: rem(22px);
+            font-weight: 300;
+            color: #000000;
+            background-color: #f9b43b;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        &_close{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.8);
+            border: 1px solid #000000;
+            position: absolute;
+            left:90%;
+            color: #000000;
+            font-size: 40px;
+            left: 97%;
+            top: -15%;
+            text-align: center;
+            line-height: 21px;
+            
+        }
+
+       
+    }
 }

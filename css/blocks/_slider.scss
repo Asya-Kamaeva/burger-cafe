@@ -7,6 +7,7 @@
         align-items: center;
         height: 100%;
         position: relative;
+        overflow: hidden;
     }
 
     &__control_prev {
@@ -18,7 +19,7 @@
         border-radius: rem(4px);
         border-top-width: 0;
         border-right-width: 0;
-        left: 0vw;
+        left: 1vw;
 
     }
 
@@ -31,18 +32,23 @@
         border-radius: rem(4px);
         border-bottom-width: 0;
         border-left-width: 0;
-        right: 0vw;
+        right: 1vw;
 
     }
 
     &__list{
         display: flex;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
     }
 
 
 
     &__item {
         display: flex;
+        min-width: 100%;
+        overflow: hidden;
        
 
         @include tablets {
@@ -63,12 +69,13 @@
             width: 80%;
             justify-content: center;
             align-items: center;
-            height: 45vh;
+            height: 50vh;
 
         }
 
         @include phones {
             width: 100%;
+            height: 45vh;
         }
 
     }
@@ -83,8 +90,13 @@
         justify-content: center;
         align-items: center;
         border-radius: rem(10px);
-        background-color: rgba(227, 80, 40, 0.4);
+        background-color: rgba(227, 80, 40, 0.1);
         top: 20%;
+        left: 0;
+
+        &:hover{
+            background-color: rgba(227, 80, 40, 0.4);
+        }
 
        
 
@@ -128,10 +140,15 @@
         overflow: hidden;
         margin-top: 30%;
         transform: translateY(-30%);
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
 
         @include tablets {
             width: 80%;
             bottom: -5vh;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         @include phones {
@@ -142,6 +159,7 @@
     }
 
     &__kkal {
+        display: inline-block;
         position: absolute;
         color: #ffffff;
         font-family: Gagalin;
@@ -149,13 +167,16 @@
         font-weight: 400;
         line-height: rem(24px);
         opacity: 0.8;
+        width: rem(60px);
+        height: rem(80px);
 
         bottom: 25%;
+        left: 0;
 
         @include tablets {
             top: 4vh;
             right: 20vw;
-
+            left: auto;
         }
 
         @include phones {
