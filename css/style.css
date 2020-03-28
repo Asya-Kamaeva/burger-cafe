@@ -9,6 +9,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: hidden;
   position: relative;

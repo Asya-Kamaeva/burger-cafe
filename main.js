@@ -9,7 +9,7 @@ const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
 const successOverlay = createOverlay("<b>Скоро ты будешь накормлен!</b>");
 const failOverlay = createOverlay("<b>Сиди голодный, ты не заслужил!</b>");
-
+const body = document.getElementsByTagName('body')[0];
 
 hamburger.addEventListener('click', function () {
     nav.classList.toggle("nav_active");
@@ -91,6 +91,8 @@ sendButton.addEventListener("click", function (e) {
 
         xhr.send(formData);
         xhr.addEventListener('load', function () {
+            
+            body.classList.add('hidden');
             let result = JSON.parse(xhr.response);
 
             if (result.status) {
@@ -123,7 +125,7 @@ function createOverlay(content) {
     closeElement.addEventListener('click', function(e){
         e.preventDefault();
         document.body.removeChild(overlayElement);
-
+        body.classList.remove('hidden');
     });
 
     const contentElement = overlayElement.querySelector(".order__overlay_content");
