@@ -20,7 +20,7 @@ const gulpif = require('gulp-if');
 const env = process.env.NODE_ENV;
 
 const styles = [
-    'src/css/normalize.css',
+    
     'src/css/style.scss'
 ];
 
