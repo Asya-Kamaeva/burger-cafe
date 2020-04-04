@@ -1,5 +1,5 @@
 .map {
-    background-image: url(../../img/map.png);
+    // background-image: url(../img/map.png);
     background-size: cover;
     position: relative;
     background-position: center;
@@ -11,6 +11,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 10;
 
     @include phones {
         height: 28vw;

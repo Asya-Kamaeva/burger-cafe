@@ -1,0 +1,41 @@
+.player {
+    background: url(../img/we-bg.png);
+    background-size: cover;
+
+
+    &__title {
+
+        @include title;
+        color: #2f3234;
+        line-height: rem(64px);
+
+        padding-bottom: rem(55px);
+        text-align: center;
+        padding-top: 15vh;
+    }
+
+    &__content{
+        width: 60%;
+        height: 40%;
+        background-color: #fff;
+       
+    }
+
+    &__block{
+        position: relative;
+    }
+
+    &__controls{
+        position: absolute;
+        height: 50px;
+        margin-top: auto;
+        background-color: rgba(12,12,12,0.8);
+    }
+
+    &__start_icon{
+        width: 30px;
+        height: 30px;
+        color: #626262;
+    }
+    
+}

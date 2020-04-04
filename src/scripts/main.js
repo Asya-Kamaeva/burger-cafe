@@ -1,3 +1,5 @@
+
+
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
 const name = document.querySelectorAll(".team__name");
@@ -52,6 +54,7 @@ for (let i = 0; i < menu.length; i++) {
 
 }
 
+
 left.addEventListener("click", function (e) {
     loop("left", e);
 });
@@ -91,15 +94,15 @@ sendButton.addEventListener("click", function (e) {
 
         xhr.send(formData);
         xhr.addEventListener('load', function () {
-            
+
             body.classList.add('hidden');
             let result = JSON.parse(xhr.response);
 
             if (result.status) {
                 document.body.appendChild(successOverlay);
-                    const formClean = document.querySelector(".order__button_none");
-                    formClean.click();
-           
+                const formClean = document.querySelector(".order__button_none");
+                formClean.click();
+
             } else {
                 document.body.appendChild(failOverlay);
             }
@@ -122,7 +125,7 @@ function createOverlay(content) {
     });
 
     const closeElement = overlayElement.querySelector('.order__overlay_close');
-    closeElement.addEventListener('click', function(e){
+    closeElement.addEventListener('click', function (e) {
         e.preventDefault();
         document.body.removeChild(overlayElement);
         body.classList.remove('hidden');
@@ -169,4 +172,65 @@ function validateField(order__block) {
     order__block.nextElementSibling.textContent = order__block.validationMessage;
     return order__block.checkValidity();
 
+}
+
+//яндекс карты
+
+let myMap;
+
+const init = () => {
+    myMap = new ymaps.Map("map", {
+        center: [59.938477, 30.322235],
+        zoom: 12.2,
+        controls: []
+    });
+
+    const coords = [
+        [59.975457, 30.314638],
+        [59.950235, 30.385900],
+        [59.931656, 30.271322],
+        [59.945328, 30.241630]
+    ];
+
+    const myCollection = new ymaps.GeoObjectCollection({}, {
+
+        draggable: false,
+        iconLayout: 'default#image',
+        iconImageHref: '../img/map-marker.svg',
+        iconImageSize: [44, 55],
+        iconImageOffset: [-35, -52]
+    });
+
+    for (var i = 0; i < coords.length; i++) {
+        myCollection.add(new ymaps.Placemark(coords[i]));
+    }
+
+    myMap.geoObjects.add(myCollection);
+
+    myMap.behaviors.disable('scrollZoom');
+}
+
+ymaps.ready(init);
+
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '405',
+        width: '660',
+        videoId: 'ZLywUPpuOig',
+        events: {
+            // 'onReady': onPlayerReady,
+            // 'onStateChange': onPlayerStateChange
+        },
+        playerVars: {
+            controls: 0,
+            disablekb: 0,
+            showinfo: 0,
+            rel: 0,
+            autoplay: 0,
+            modestbranding: 0
+
+        }
+
+    });
 }
