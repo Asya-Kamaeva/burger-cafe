@@ -2,6 +2,13 @@
     background: url(../img/we-bg.png);
     background-size: cover;
 
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
 
     &__title {
 
@@ -12,30 +19,33 @@
         padding-bottom: rem(55px);
         text-align: center;
         padding-top: 15vh;
+
+        @include tablets{
+            padding-bottom: rem(100px);
+        }
+        @include phones{
+            padding-bottom: rem(55px);
+            font-size: rem(60px);
+            padding-top: 12vh;
+        }
     }
 
     &__content{
-        width: 60%;
+        width: 70%;
         height: 40%;
+
+        @include tablets{
+            width: 90%;
+        }
+        @include phones{
+            width: 100%;
+        }
+        
+   
         background-color: #fff;
        
     }
 
-    &__block{
-        position: relative;
-    }
-
-    &__controls{
-        position: absolute;
-        height: 50px;
-        margin-top: auto;
-        background-color: rgba(12,12,12,0.8);
-    }
-
-    &__start_icon{
-        width: 30px;
-        height: 30px;
-        color: #626262;
-    }
+    
     
 }

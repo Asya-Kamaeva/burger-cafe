@@ -28,6 +28,11 @@ const styles = [
 //     'src/scripts/*.js'
 // ];
 
+const scripts = [
+    'src/scripts/*.js',
+    'src/scripts/**/**/*.js'
+];
+
 task('clean', () => {
     return src('${DIST_PATH}/**/*', { read: false })
         .pipe(rm())
@@ -59,7 +64,7 @@ task('styles', () => {
         .pipe(concat('style.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(px2rem())
+        // .pipe(px2rem())
         .pipe(gulpif(env === 'prod', autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -80,7 +85,7 @@ task('server', () => {
 });
 
 task('scripts', () => {
-    return src('src/scripts/*.js')
+    return src(scripts)
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
         .pipe(concat('main.js', { newLine: ';' }))
         .pipe(gulpif(env === 'prod', babel({
@@ -111,5 +116,6 @@ task('default',
 task('build',
     series('clean',
         parallel('copy:html', 'styles', 'scripts', 'copy:fonts', 'copy:img'),
+        parallel('watch', 'server')
     )
 );

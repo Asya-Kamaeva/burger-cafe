@@ -20,8 +20,13 @@ overflow: hidden;
   overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   
+}
+
+.maincontent{
+  height: 100%;
+  transition: transform 0.5s;
 }
 
 * {
