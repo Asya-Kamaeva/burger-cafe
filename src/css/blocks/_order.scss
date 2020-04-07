@@ -289,17 +289,25 @@
 
         &_container {
             width: 50%;
-            height: 10%;
+            height: 20%;
             font-family: Ubuntu;
             font-size: rem(22px);
             font-weight: 300;
             color: #000000;
+            padding-left: 2%;
+            padding-right: 2%;
             background-color: #f9b43b;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
+
+            @include phones{
+                width: 90%;
+                height: 65%;
+                font-size: rem(18px);
+            }
 
         }
 
@@ -317,6 +325,11 @@
             top: -15%;
             text-align: center;
             line-height: 21px;
+
+            @include phones{
+                top: -4%;
+                left: 94%;
+            }
             
         }
 
